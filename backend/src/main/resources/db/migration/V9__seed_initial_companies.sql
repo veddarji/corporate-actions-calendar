@@ -1,0 +1,22 @@
+INSERT INTO companies (symbol, exchange, isin, name, sector, industry, currency, country) VALUES
+('RELIANCE', 'NSE', 'INE002A01018', 'Reliance Industries Limited', 'Energy', 'Oil & Gas', 'INR', 'India'),
+('TCS', 'NSE', 'INE467B01029', 'Tata Consultancy Services Limited', 'Technology', 'IT Services', 'INR', 'India'),
+('HDFCBANK', 'NSE', 'INE040A01034', 'HDFC Bank Limited', 'Financial Services', 'Private Sector Bank', 'INR', 'India'),
+('INFY', 'NSE', 'INE009A01021', 'Infosys Limited', 'Technology', 'IT Services', 'INR', 'India'),
+('HINDUNILVR', 'NSE', 'INE030A01027', 'Hindustan Unilever Limited', 'Consumer Goods', 'FMCG', 'INR', 'India'),
+('ICICIBANK', 'NSE', 'INE090A01021', 'ICICI Bank Limited', 'Financial Services', 'Private Sector Bank', 'INR', 'India'),
+('KOTAKBANK', 'NSE', 'INE237A01028', 'Kotak Mahindra Bank Limited', 'Financial Services', 'Private Sector Bank', 'INR', 'India'),
+('BAJFINANCE', 'NSE', 'INE296A01024', 'Bajaj Finance Limited', 'Financial Services', 'NBFC', 'INR', 'India'),
+('WIPRO', 'NSE', 'INE075A01022', 'Wipro Limited', 'Technology', 'IT Services', 'INR', 'India'),
+('AXISBANK', 'NSE', 'INE238A01034', 'Axis Bank Limited', 'Financial Services', 'Private Sector Bank', 'INR', 'India'),
+('ASIANPAINT', 'NSE', 'INE021A01026', 'Asian Paints Limited', 'Consumer Goods', 'Paints', 'INR', 'India'),
+('MARUTI', 'NSE', 'INE585B01010', 'Maruti Suzuki India Limited', 'Auto', 'Passenger Cars', 'INR', 'India'),
+('SUNPHARMA', 'NSE', 'INE044A01036', 'Sun Pharmaceutical Industries Limited', 'Healthcare', 'Pharmaceuticals', 'INR', 'India'),
+('BAJAJFINSV', 'NSE', 'INE918I01026', 'Bajaj Finserv Limited', 'Financial Services', 'Insurance', 'INR', 'India'),
+('NESTLEIND', 'NSE', 'INE239A01016', 'Nestle India Limited', 'Consumer Goods', 'FMCG', 'INR', 'India'),
+('DRREDDY', 'NSE', 'INE089A01023', 'Dr. Reddys Laboratories Limited', 'Healthcare', 'Pharmaceuticals', 'INR', 'India'),
+('ULTRACEMCO', 'NSE', 'INE481G01011', 'UltraTech Cement Limited', 'Materials', 'Cement', 'INR', 'India'),
+('TITAN', 'NSE', 'INE280A01028', 'Titan Company Limited', 'Consumer Discretionary', 'Watches & Jewellery', 'INR', 'India'),
+('ONGC', 'NSE', 'INE213A01029', 'Oil And Natural Gas Corporation Limited', 'Energy', 'Oil & Gas', 'INR', 'India'),
+('TATAMOTORS', 'NSE', 'INE155A01022', 'Tata Motors Limited', 'Auto', 'Automobiles', 'INR', 'India')
+ON CONFLICT (exchange, symbol) DO NOTHING;
